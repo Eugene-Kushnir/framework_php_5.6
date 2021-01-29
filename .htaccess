@@ -1,0 +1,16 @@
+
+php_flag magic_quotes_gpc Off
+
+AddDefaultCharset utf-8
+
+DirectoryIndex index.php
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.*) index.php
+
+php_value xdebug.remote_autostart 0
+php_value xdebug.remote_enable 0
+php_value xdebug.profiler_enable 0
